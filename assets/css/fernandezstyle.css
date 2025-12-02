@@ -1,0 +1,21 @@
+body{
+	background-color: rgb(161, 19, 180);
+	color: rgb(5, 80, 80);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+	text-align: center;
+	color: rgb(9, 14, 92);
+}
+.container{
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	border: 2px solid rgb(31, 160, 41);
+	border-radius: 15px;
+	background-color: rgb(206, 19, 97);
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
