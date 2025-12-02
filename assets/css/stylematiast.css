@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #C1DCE1;
+}
+
+header{
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#presentacion{
+    max-width: 900px;
+    border: 2px solid #000000;
+    padding: 3rem;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: linear-gradient(-1deg, #C1DCE1, #4ca1af); 
+}
+
+.secciones_compartidas{
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-1deg, #C1DCE1, #D1E5E9); 
+}
+
+#secciones_restantes{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+    
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section p{
+    text-align: justify;
+}
+
+section:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 10px 20px #969696ff;
+    border-color: #47729cff; 
+    transition: transform 0.3s ease;
+}
+.secciones_individuales{
+    max-width: 900px;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: linear-gradient(-1deg, #C1DCE1, #D1E5E9); 
+}
+#propuestas{
+    max-width: 1200px;
+    margin: 40px auto;
+    align-items: center;
+}
+
+#propuestas h2{
+    margin-bottom:30px;
+}
+
+#sobreMi{
+    max-width: 900px;
+    border: 2px solid #000000;
+    padding: 3rem;
+    margin: 30px auto;
+    border-radius: 20px;
+    background: linear-gradient(-1deg, #C1DCE1, #4ca1af); 
+}
+
+#proyectos{
+    max-width: 900px;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background: linear-gradient(-1deg, #C1DCE1, #D1E5E9); 
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    margin-top: 3rem;
+}
