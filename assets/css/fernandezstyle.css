@@ -1,7 +1,7 @@
 body{
 	background-color: rgb(161, 19, 180);
 	color: rgb(5, 80, 80);
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: sans-serif;
 }
 h1{
 	text-align: center;
@@ -11,11 +11,22 @@ h1{
 	margin: auto;
 	width: 80%;
 	padding: 10px;
-	border: 2px solid rgb(31, 160, 41);
+	border: 2px solid hsl(125, 68%, 37%);
 	border-radius: 15px;
-	background-color: rgb(206, 19, 97);
+	background-color: hsl(140, 46%, 58%);
 	color: black;
 }
 .bold{
 	font-weight: bold;
+}
+.imagen-polla{
+    /* Estilo aplicado a foto de la polla */
+    width: 80%;
+    height: auto; /* Mantiene la proporción original */
+    border: 2px solid hsl(125, 68%, 37%);
+    padding: 10px; /* Espacio entre el borde y la imagen */
+    background-color: hsl(140, 46%, 58%);
+    display: flex; /* Para centrarla con margin: auto si es necesario */
+    border-radius: 15px;
+    margin: auto; /* Centra la imagen si es un elemento de bloque */
 }
