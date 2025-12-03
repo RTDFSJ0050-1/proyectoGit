@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 20px;
     background-color:darkcyan;
 }
@@ -17,6 +17,9 @@ header, section {
     border-color: brown;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+}
+div {
+    box-sizing: content-box;
 }
 h2 {
     color:black;
