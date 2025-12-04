@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Digital</title>
-    <link rel="stylesheet" href="assets/css/karinastyles.css">
+    <link rel="stylesheet" href="../css/karinastyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header class="hero">
@@ -13,17 +14,100 @@
     </header>
 
 
-<nav class="navbar">
-<a href="assets/html/tema.html">Sobre mi</a>
-<a href="assets/html/form.html">Proyectos</a>
-<a href="assets/html/form2.html">Conocimientos</a>
-<a href="assets/html/form3.html">Experiencia laboral</a>
-<a href="assets/html/form4.html">Formación académica</a>
-<a href="assets/html/form5.html">Datos Freak</a>
+<nav class="navbar  text-white" >
+    <p class="mx-auto">Ejemplo de acordeon con Bootstrap 5</p>
 </nav>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h3 id="sobreMi">Sobre mi</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>Ingeniera con experiencia en desarrollo web, atención a clientes y soporte técnico. </p>
+                <p>Me especializo en construir interfaces limpias y accesibles, optimizando rendimiento y mejorando la experiencia de usuario.</p>
+                <p>Busco posiciones en desarrollo frontend o full-stack donde pueda aportar con diseño y código.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h3>Proyectos</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p><strong>Proyecto 1:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><strong>Proyecto 2:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><strong>Proyecto 3:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h3>Conocimientos</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+               <p> Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.
+                 This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling 
+                 up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <h3>Experiencia Laboral</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul class="lista">
+                    <li>Experiencia 1</li>
+                    <li>Experiencia 2</li>
+                    <li>Experiencia 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-
-<section class="section">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <h3>Formación Académica</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul class="lista">
+                    <li>Formación 1</li>
+                    <li>Formación 2</li>
+                    <li>Formación 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                <h3>Datos Freak</h3>
+            </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
+  <!----
+<section id="sobreMi" class="section">
 <h2>Sobre mí</h2>
 <p>Ingeniera con experiencia en desarrollo web, atención a clientes y soporte técnico. </p>
 <p>Me especializo en construir interfaces limpias y accesibles, optimizando rendimiento y mejorando la experiencia de usuario.</p>
@@ -39,7 +123,7 @@
 </section>
 
 
-<section class="section">
+<section id="conocimientos" class="section">
 <h2>Competencias o conocimientos técnicos</h2>
 <ul class="lista">
 <li>Java</li>
@@ -49,7 +133,7 @@
 </section>
 
 
-<section class="section">
+<section id="experiencia" class="section">
 <h2>Experiencia laboral</h2>
     <ul class="lista">
         <li>Experiencia 1</li>
@@ -59,7 +143,7 @@
 </section>
 
 
-<section class="section">
+<section id="formacion" class="section">
     <h2>Formación académica</h2>
         <ul class="lista">
             <li>Formación 1</li>
@@ -68,7 +152,7 @@
         </ul>
 </section>
 
-<section class="section">
+<section id="datosfreak" class="section">
     <h2>Datos Freak</h2>
     <ul class="lista">
         <li>Tengo tres gatos: Ann, Harriet y Tuertin</li>
@@ -76,9 +160,10 @@
         <li>Soy Tarotista en mi tiempo libre y, segun mis amigas, soy bruja</li>
 
 </section>
-
+-->
 <footer class="footer">
     <p>Derechos reservados karirik® 2025</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
