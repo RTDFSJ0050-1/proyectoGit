@@ -1,0 +1,48 @@
+/* ======== Estilos Globales ======== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Titulos secciones */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-left: 6px solid #000;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #111, #444);
+    color: #fff;
+}
+
+/* Listas */
+.list-group-item {
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transition: .3s;
+}
+
+/* Nav */
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Botón */
+.btn-dark:hover {
+    background-color: #222;
+}
