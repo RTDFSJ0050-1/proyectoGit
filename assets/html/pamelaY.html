@@ -3,90 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="assets/css/pamelaYstyle.css" />
     <title>Mi Portafolio Digital</title>
   </head>
   <body>
-    <header id="myName">
-      <h1>¡Hola soy Pamela!</h1>
-      <p>Desarrolladora web Full Stack Java en formacion.</p>
+    <header id="myName" class="bg-success text-white text-center py-5">
+      <h1 class="fw-bold">¡Hola soy Pamela!</h1>
+      <p class="lead">Desarrolladora web Full Stack Java en formacion.</p>
     </header>
-    <section id="aboutMe">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy enfermera de profesión, actualmente en un proceso de reinvención
-        hacia el área tecnológica. Realicé un curso de Desarrolladora Full Stack
-        JavaScript, donde trabajé con React, Node.js, Express, PostgreSQL y
-        desarrollo de APIs.
-      </p>
-      <p>
-        Autodidacta y orientada al detalle. Tengo experiencia en diseño e
-        implementación de APIs, autenticación con JWT y manejo de datos
-        complejos. Me adapto rápido, aprendo continuamente y disfruto resolver
-        desafíos técnicos.
-      </p>
-      <p>
-        Me motiva aplicar mi experiencia previa en salud —organización, trabajo
-        bajo presión, empatía y resolución de problemas— al mundo TI,
-        desarrollando soluciones prácticas, escalables y orientadas a mejorar la
-        experiencia del usuario.
-      </p>
-      <p>
-        En busqueda de oportunidades en el rubro para seguir creciendo como
-        desarrolladora y aportar desde una mirada multidisciplinaria.
-      </p>
-    </section>
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <ul>
-        <li>
-          <strong>Proyecto:</strong> Bark & Purr – Marketplace para Mascotas
-        </li>
-        <li><strong>Proyecto:</strong> proyecto2</li>
-        <li><strong>Proyecto:</strong> proyecto3</li>
-      </ul>
-    </section>
-    <section id="skills">
-      <h2>Competencias o conocimientos tecnicos</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>HTML/CSS3</li>
-        <li>Node.js y Express</li>
-        <li>SQL</li>
-        <li>React</li>
-        <li>APIs REST</li>
-        <li>JWT / autenticación y autorización</li>
-        <li>Manejo de Git y GitHub</li>
-        <li>Deploy con Render y Netlify</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Educacion</h2>
-      <ul>
-        <li>
-          <strong>Titulo en Enfermeria</strong> - Universidad Santiago de Chile
-          (2012-2018)
-        </li>
-        <li><strong>Sence Learning</strong> - Curso de Trabajo en Equipo</li>
-        <li><strong>Sence Learning</strong> - Curso de Liderazgo</li>
-        <li><strong>Udemy</strong> - Curso de Inglés Básico</li>
-        <li>
-          <strong>Enfermera en Hemodialisis</strong> - Davita Chile (2020 -
-          2024)
-        </li>
-        <li>
-          <strong>Desarrollador Full Stack en JavaScript 440hrs</strong> -
-          Desafio Latam (2024-2025)
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contacto</h2>
-      <p>si me quieres contactar conmigo mi correo es:</p>
-      <a href="mailto:pamela.kyp@gmail.com">pamela.kyp@gmail.com</a>
-    </section>
-    <footer>
-      <p>Derechos reservados © 2025</p>
+
+    <!-- SOBRE MÍ -->
+
+    <div class="container my-5">
+      <section id="aboutMe" class="mb-5">
+        <h2 class="mb-3">Sobre mí</h2>
+        <div class="card p-4 shadow-sm border-0">
+          <p>
+            Soy enfermera de profesión, actualmente en un proceso de reinvención
+            hacia el área tecnológica. Realicé un curso de Desarrolladora Full
+            Stack JavaScript, donde trabajé con React, Node.js, Express,
+            PostgreSQL y desarrollo de APIs.
+          </p>
+          <p>
+            Autodidacta y orientada al detalle. Tengo experiencia en diseño e
+            implementación de APIs, autenticación con JWT y manejo de datos
+            complejos. Me adapto rápido, aprendo continuamente y disfruto
+            resolver desafíos técnicos.
+          </p>
+          <p>
+            Me motiva aplicar mi experiencia previa en salud —organización,
+            trabajo bajo presión, empatía y resolución de problemas— al mundo
+            TI, desarrollando soluciones prácticas, escalables y orientadas a
+            mejorar la experiencia del usuario.
+          </p>
+          <p>
+            En busqueda de oportunidades en el rubro para seguir creciendo como
+            desarrolladora y aportar desde una mirada multidisciplinaria.
+          </p>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="mb-5">
+        <h2 class="mb-3">Proyectos</h2>
+        <div class="card p-4 shadow-sm border-0">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Proyecto:</strong> Bark & Purr – Marketplace para Mascotas
+            </li>
+            <li class="list-group-item">
+              <strong>Proyecto:</strong> proyecto2
+            </li>
+            <li class="list-group-item">
+              <strong>Proyecto:</strong> proyecto3
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- HABILIDADES Y EDUCACION -->
+      <section id="skills" class="mb-5">
+        <h2 class="mb-3">Competencias o conocimientos tecnicos</h2>
+        <div class="card p-4 shadow-sm border-0">
+          <ul class="row">
+            <li class="col-md-4">JavaScript</li>
+            <li class="col-md-4">HTML/CSS3</li>
+            <li class="col-md-4">Node.js y Express</li>
+            <li class="col-md-4">SQL</li>
+            <li class="col-md-4">React</li>
+            <li class="col-md-4">APIs REST</li>
+            <li class="col-md-4">JWT / autenticación y autorización</li>
+            <li class="col-md-4">Manejo de Git y GitHub</li>
+            <li class="col-md-4">Deploy con Render y Netlify</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCACION Y CONTACTO -->
+      <section class="mb-5">
+        <h2 class="mb-3">Educacion</h2>
+        <div class="card p-4 shadow-sm border-0">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Titulo en Enfermeria</strong> - Universidad Santiago de
+              Chile (2012-2018)
+            </li>
+            <li class="list-group-item">
+              <strong>Sence Learning</strong> - Curso de Trabajo en Equipo
+              (2018)
+            </li>
+            <li class="list-group-item">
+              <strong>Sence Learning</strong> - Curso de Liderazgo (2018)
+            </li>
+            <li class="list-group-item">
+              <strong>Udemy</strong> - Curso de Inglés Básico (2019)
+            </li>
+            <li class="list-group-item">
+              <strong>Enfermera en Hemodialisis</strong> - Davita Chile (2020 -
+              2024)
+            </li>
+            <li class="list-group-item">
+              <strong
+                >Certificación en desarrollo web Full Stack JavaScript
+                440hrs</strong
+              >
+              - Desafio Latam (2024-2025)
+            </li>
+            <li class="list-group-item">
+              <strong
+                >Certificación en desarrollo web Full Stack Java 480hrs</strong
+              >
+              - Academia Kibernum / SENCE (2025-2026)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="container my-5">
+        <h2 class="mb-3">Contacto</h2>
+
+        <p>Dudas o consultas, manda un email a:</p>
+
+        <div class="d-flex justify-content-center">
+          <a
+            href="mailto:pamela.kyp@gmail.com"
+            class="btn btn-success text-white px-4 py-2 rounded"
+          >
+            Contacto
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">Derechos reservados © 2025</p>
     </footer>
   </body>
 </html>
