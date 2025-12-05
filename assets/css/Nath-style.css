@@ -64,14 +64,6 @@ ul li {
 }
 
 
-img {
-    display: block;
-    margin: 15px 0;
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
 .imagenes img:hover{
     transform: scale(1.50);
     cursor: pointer;
@@ -94,4 +86,12 @@ footer {
     color: white;
     padding: 15px;
     margin-top: 40px;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
