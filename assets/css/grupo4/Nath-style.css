@@ -22,6 +22,14 @@ header {
     text-align: center;
 }
 
+header {
+    img {
+        width: 1800px;
+        height: 400px;
+    }
+
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -51,6 +59,12 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #fff;
+    -webkit-text-stroke: 3px #000000;
+    font-weight: bold;
 }
 
 h2 {
