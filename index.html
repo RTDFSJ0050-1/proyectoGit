@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Curso RTD FSJ 0050-1</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/profes/style.css"/>
 </head>
 <body>
 	<nav class="navbar navbar-dark bg-dark fixed-top">
@@ -23,6 +24,9 @@
 					<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="assets/html/profes/kenpo.html">Kenpo</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="assets/html/contacto.html">Contacto</a>
@@ -115,10 +119,41 @@
 		<p>Este curso está diseñado para proporcionar a los estudiantes una comprensión profunda de los conceptos fundamentales y avanzados necesarios para sobresalir en el campo del desarrollo de software.</p>
 		<p>Esperamos que disfruten del curso y aprovechen al máximo los recursos y materiales proporcionados.</p>
 	</section>
+	<section>
+		<h2>Objetivos del Curso</h2>
+		<ul>
+			<li>Comprender los principios básicos del desarrollo de software.</li>
+			<li>Aprender a utilizar herramientas y tecnologías modernas.</li>
+			<li>Desarrollar habilidades prácticas a través de proyectos y ejercicios.</li>
+			<li>Fomentar el trabajo en equipo y la colaboración entre estudiantes.</li>
+		</ul>
+	</section>
+	<section class="container">
+		<section class="row">
+			<section class="col-4">
+				<!-- Botón de llamada a la acción codigo en linea-->
+				<button onclick="alert('Más información sobre el curso')">Más información</button>
+			</section>
+			<section class="col-4">
+				<button onclick="mostrarexterno()">Mas info ext</button>
+			</section>
+			<section class="col-4">
+				<!-- Botón de llamada a la acción codigo interno-->
+				<button onclick="monstrarmensaje()">Más información 2</button>
+			</section>
+		</section>
+	</section>
 	<footer>
 		<p>&copy; 2024 Curso RTD FSJ 0050-1. Todos los derechos reservados.</p>
 	</footer>
+	<!-- Bootstrap JS Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+	<script>
+		function monstrarmensaje() {
+			alert('Más información sobre el curso');
+		}
+	</script>
+	<script src="assets/js/profes/script.js"></script>
 </body>
 </html>
