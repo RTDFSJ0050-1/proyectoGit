@@ -22,7 +22,7 @@ h1{
 header{
     width: 100%;
     height: 100%;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 80px;
     text-align: center;
 }
@@ -38,3 +38,5 @@ li{ text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', A
 }
 section { margin-left: 20px; margin-right: 20px; text-align: center; border-radius: 10px; padding: 15px; background-color:#21333d; box-shadow: 0 4px 8px 0 rgba(49, 146, 159, 0.2), 0 6px 20px 0 rgba(31, 77, 123, 0.19);
 }
+nav{ margin-top: 5px;
+    margin-bottom: 0px; text-align: center; }
