@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="../../css/grupo4/Nath-style.css">
 </head>
 <body>
+    <div id="age-popup" class="age-popup">
+        <div class="age-box">
+            <h2>¿Tienes 18 años o más?</h2>
+            <p>Debes ser mayor de edad para ver este contenido.</p>
+            <button id="btn-yes" class="btn-yes">Sí, tengo 18+</button>
+            <button id="btn-no" class="btn-no">No, soy menor</button>
+            <script>
+                const popup = document.getElementById("age-popup");
+                if (true) {  
+                    popup.style.display = "flex"; 
+                }
+                document.getElementById("btn-yes").onclick = function () {
+                    popup.style.display = "none";
+                };
+                document.getElementById("btn-no").onclick = function () {
+                    window.location.href = "https://www.google.com";
+                };
+            </script>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -40,15 +60,15 @@
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <li class="nav-item dropdown d-flex">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PORTAFOLIO
+            <li class="nav-item dropdown d-flex justify-content-end">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="ture">
+                    Clase
                 </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">NORMALES</a></li>
-                    <li><a class="dropdown-item" href="#">ANIMACIÓNES</a></li>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="../grupo4/barbaraVera.html">Barbara Vera</a></li>
+                    <li><a class="dropdown-item" href="../grupo4/matiast.html">Matias </a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" style="color: red;">NW</a></li>
+                    <li><a class="dropdown-item" href="../profes/kenpo.html" >KENPO</a></li>
                 </ul>
             </li>
             </div>
