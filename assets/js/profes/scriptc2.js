@@ -53,9 +53,9 @@ switch (dia){
 console.log(nombreDia);
 
 //Sentencia switch con múltiples casos
-let mes=4;
+let numeroMes=4;
 let estacion;
-switch (mes){
+switch (numeroMes){
 	case 12:
 	case 1:
 	case 2:
@@ -98,3 +98,30 @@ switch (opcion){
 		accion="Opción no válida";
 }
 console.log(accion);
+
+//Ejercicio con strings
+let nombreMes="octubre";
+let mensaje2;
+if(nombreMes=="octubre"){
+	mensaje2='Usted es Libra o Escorpio';
+}else if(nombreMes=="noviembre"){
+	mensaje2='Usted es Escorpio o Sagitario';
+}else if(nombreMes=="diciembre"){
+	mensaje2='Usted es Sagitario o Capricornio';
+}else{
+	mensaje2='Mes no válido para determinar el signo zodiacal';
+}
+console.log(mensaje2);
+
+//Ejercicio switch con booleanos
+let esEstudiante=false;
+let descuento;
+switch (esEstudiante){
+	case true:
+		descuento="Tiene derecho a un descuento del 15%";
+		break;
+	case false:
+		descuento="No tiene derecho a un descuento";
+		break;
+}
+console.log(descuento);
