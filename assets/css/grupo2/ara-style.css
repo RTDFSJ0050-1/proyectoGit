@@ -1,15 +1,18 @@
 body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     background-color: #0b0b0b; color: #889fac;
-    text-align: center;
+    text-align: center; border-left: 50px; border-right: 50px;
 } 
 p{font-size: 20px; 
     color: #f8f8f3;text-align: center;
-    text-underline-position: under; below;  
+    text-underline-position: under;  
+    text-align: center;
 } 
 li{font-size: 18px; 
     color: #fcfcf8;
     text-underline-position: below;
     font-weight: bolder;
+    text-align: center;
+    list-style-type: none; /* Removes la viñeta*/
 }
 h1{
     font-size: 25px;
@@ -18,14 +21,22 @@ h1{
 }
 header{
     width: 100%;
-    height: auto;
-    margin-top: 10px;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
 }
 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: block
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(49, 146, 159, 0.2), 0 6px 20px 0 rgba(31, 77, 123, 0.19);
 }
-li{ text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;font-weight: lighter;
+li{ text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;font-weight: lighter;text-align: center;width: fit-content; flex-wrap: wrap; margin: auto;
 }
+section { margin-left: 20px; margin-right: 20px; text-align: center; border-radius: 10px; padding: 15px; background-color:#21333d; box-shadow: 0 4px 8px 0 rgba(49, 146, 159, 0.2), 0 6px 20px 0 rgba(31, 77, 123, 0.19);
+}
+nav{ margin-top: 5px;
+    margin-bottom: 0px; text-align: center; }
