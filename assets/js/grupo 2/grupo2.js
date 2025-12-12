@@ -23,3 +23,21 @@ categoriaVentas = "Medio";
 categoriaVentas = "Bajo";
 }
 
+let bonoRendimiento;
+
+switch (categoriaVentas) {
+case "Alto":
+bonoRendimiento = 500;
+break;
+case "Medio":
+bonoRendimiento = 200;
+break;
+default:
+bonoRendimiento = 50;
+break;
+}
+
+console.log("Empleado:", nombre);
+console.log("Factor de Antigüedad:", factorAntiguedad);
+console.log("Categoría de Ventas:", categoriaVentas);
+console.log("Bono por Rendimiento:", bonoRendimiento);
