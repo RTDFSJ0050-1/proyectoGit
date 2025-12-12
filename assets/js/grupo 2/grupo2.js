@@ -8,5 +8,3 @@ factorAntiguedad = 0.05;
 factorAntiguedad = 0.10;
 } else {
 factorAntiguedad = 0.15;
-}
-if ()
