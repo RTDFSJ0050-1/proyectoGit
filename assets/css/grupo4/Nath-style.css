@@ -62,8 +62,9 @@ section {
 }
 
 h1 {
+    font-size: 30px;
     color: #fff;
-    -webkit-text-stroke: 3px #000000;
+    -webkit-text-stroke: 1px #000000;
     font-weight: bold;
 }
 
@@ -143,4 +144,20 @@ footer {
 .btn-no {
     background: #dc3545;
     color: white;
+}
+.image-container {
+    position: relative;   /* Necesario para ubicar el texto dentro */
+    display: inline-block;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 50%;             /* Centro vertical */
+    left: 50%;            /* Centro horizontal */
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black; /* Para que se lea mejor */
+    width: 80%;
 }
