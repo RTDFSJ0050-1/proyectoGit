@@ -2,20 +2,14 @@ let nombre = "Emilio";
 let salarioBase = 800000;       // sueldo mensual
 let añosDeServicio = 7;         // años trabajados
 let ventasAnuales = 9500;       // ventas del año
-<<<<<<< HEAD
-=======
 
 let factorAntiguedad;
 
->>>>>>> 2e5a023622e48a849a9e761fe24aeafa2ab6e906
 if (añosDeServicio < 5) {
 factorAntiguedad = 0.05;
 } else if (añosDeServicio >= 5 && añosDeServicio <= 10) {
 factorAntiguedad = 0.10;
 } else {
-<<<<<<< HEAD
-factorAntiguedad = 0.15;
-=======
 factorAntiguedad = 0.15;
 }
 
@@ -47,4 +41,3 @@ console.log("Empleado:", nombre);
 console.log("Factor de Antigüedad:", factorAntiguedad);
 console.log("Categoría de Ventas:", categoriaVentas);
 console.log("Bono por Rendimiento:", bonoRendimiento);
->>>>>>> 2e5a023622e48a849a9e761fe24aeafa2ab6e906
