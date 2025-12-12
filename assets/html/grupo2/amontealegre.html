@@ -1,34 +1,131 @@
 <!DOCTYPE html>
-<html lang="es"> 
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Mi portafolio digital</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Alberto Montealegre</title>
 
-    <!-- Bootstrap -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
-
-    <!-- Tus estilos -->
-    <link rel="stylesheet" href="../css/amontealegre.css"> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-dark bg-dark px-3">
-        <a class="navbar-brand fw-bold" href="#">Portafolio</a>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+
+        <!-- Marca -->
+        <a class="navbar-brand fw-bold" href="/">Portafolio</a>
+
+        <!-- Botón offcanvas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
+            aria-controls="offcanvasNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNav">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menú</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                    <!-- Inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Inicio</a>
+                    </li>
+
+                    <!-- Contacto -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                    </li>
+
+                    <!-- Grupo 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Grupo 1</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../../html/grupo1/carlosVenturelli.html">Carlos Venturelli</a></li>
+                            <li><a class="dropdown-item" href="../../html/karina/grupo1.html">Karina Riquelme</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="../../html/pamelaY/grupo1.html">Pamela Yañez</a></li>
+                            <li><a class="dropdown-item" href="../../html/soledadf/grupo1.html">Soledad Fernández</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Grupo 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Grupo 2</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Sergio Sanchez</a></li>
+                            <li><a class="dropdown-item" href="../../html/grupo2/FrancoC.html">>Franco Cancino</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="../../html/grupo2/amontealegre.html">Alberto Montealegre</a></li>
+                            <li><a class="dropdown-item" href="../../html/grupo2/arantxagonzalez.html">">Arantxa González</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Grupo 3 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Grupo 3</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Carolina Vásquez</a></li>
+                            <li><a class="dropdown-item" href="#">Soledad Ibáñez</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="../../html/grupo3/ignacioMadariaga.html">Ignacio Madariaga</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Grupo 4 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Grupo 4</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="../../html/grupo4/barbaraVera.html">Bárbara Vera</a></li>
+                            <li><a class="dropdown-item" href="../../html/grupo4/Natanael.html">Natanael Peña</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="../../html/grupo4/matiast.html">Matías Torres</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Grupo 5 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Grupo 5</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Diego Cubillos</a></li>
+                            <li><a class="dropdown-item" href="#">Adrian Muñoz</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Bastian Contreras</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Kenpo (link simple) -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../html/profes/kenpo.html">Kenpo</a>
+                    </li>
+                </ul>
+
+                <!-- Buscador -->
+                <form class="d-flex mt-3">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" />
+                    <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
     <!-- HEADER -->
-    <header class="text-center py-5 bg-light">
+    <header class="text-center py-5 mt-5 bg-light">
         <h1 class="fw-bold">Alberto Montealegre Espinoza</h1>
         <p class="lead">Desarrollador Web Full Stack Java</p>
     </header>
 
-    <!-- CONTENIDO -->
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="container my-5">
 
         <!-- SOBRE MI -->
@@ -42,14 +139,14 @@
         <section id="proyectos" class="mb-5">
             <h2 class="fw-bold mb-3">Proyectos Destacados</h2>
             <ul class="list-group">
-                <li class="list-group-item"><strong>Proyecto 1:</strong> Sabotaje Rock.</li>
-                <li class="list-group-item"><strong>Proyecto 2:</strong> Guerrilla Splinter.</li>
-                <li class="list-group-item"><strong>Proyecto 3:</strong> Proyecto JavaScript.</li>
+                <li class="list-group-item"><strong>Sabotaje Rock</strong></li>
+                <li class="list-group-item"><strong>Guerrilla Splinter</strong></li>
+                <li class="list-group-item"><strong>Proyecto JavaScript</strong></li>
             </ul>
         </section>
 
         <!-- COMPETENCIAS -->
-        <section class="mb-5">
+        <section id="competencias" class="mb-5">
             <h2 class="fw-bold mb-3">Competencias Técnicas</h2>
             <ul class="list-group">
                 <li class="list-group-item">Java</li>
@@ -59,7 +156,7 @@
         </section>
 
         <!-- EXPERIENCIA -->
-        <section class="mb-5">
+        <section id="experiencia" class="mb-5">
             <h2 class="fw-bold mb-3">Experiencia Laboral</h2>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Editorial Cuarto Propio:</strong> Administrador (2022-2025)</li>
@@ -68,23 +165,22 @@
         </section>
 
         <!-- EDUCACIÓN -->
-        <section class="mb-5">
+        <section id="educación" class="mb-5">
             <h2 class="fw-bold mb-3">Educación</h2>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Licenciado en Música</strong> - Universidad Arcis (2011 - 2016)</li>
-                <li class="list-group-item"><strong>Diplomado Gestión y evaluación de proyectos</strong> - Universidad Mayor (2018)</li>
-                <li class="list-group-item"><strong>Certificación en Analista de datos</strong> - Instituto Caleiseis (2019)</li>
-                <li class="list-group-item"><strong>Certificación en Desarrollo Web Full Stack Java</strong> - Talento Digital (2026)</li>
+                <li class="list-group-item"><strong>Diplomado Evaluación de Proyectos</strong> - Universidad Mayor (2018)</li>
+                <li class="list-group-item"><strong>Certificación Analista de datos</strong> - Instituto Caleiseis (2019)</li>
+                <li class="list-group-item"><strong>Certificación Desarrollo Web Full Stack Java</strong> - Talento Digital (2026)</li>
             </ul>
         </section>
 
         <!-- CONTACTO -->
-        <section class="text-center">
+        <section id="contacto" class="text-center mb-5">
             <h2 class="fw-bold mb-3">Contacto</h2>
             <p>Si me quieres contactar envía un correo a:</p>
             <a href="mailto:redacme@gmail.com" class="btn btn-dark btn-lg">redacme@gmail.com</a>
         </section>
-
     </main>
 
     <!-- FOOTER -->
@@ -93,9 +189,6 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
