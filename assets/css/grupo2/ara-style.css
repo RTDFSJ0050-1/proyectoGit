@@ -1,0 +1,91 @@
+/* ===== ESTILOS GENERALES ===== */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: #f8f8f3;
+    text-align: center;
+}
+
+/* ===== TEXTOS ===== */
+p {
+    font-size: 20px;
+    color: #f8f8f3;
+}
+
+li {
+    font-size: 18px;
+    color: #f8f8f3;
+    font-weight: bolder;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1, h3 {
+    font-size: 25px;
+    color: #f8f8f3;
+}
+
+/* ===== HEADER ===== */
+header {
+    margin: 32px 0;
+}
+
+/* ===== IMÁGENES ===== */
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: #f8f8f3 0px 0px 10px;
+}
+
+/* ===== SECCIÓN (SOLUCIÓN AL PROBLEMA) ===== */
+.section-box {
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #f8f8f3 0px 0px 10px;
+    max-width: 800px;
+    margin: 32px auto;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+    margin: 8px 0;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+    color: #f8f8f3;
+    border: 1px solid #f8f8f3;
+    box-shadow: #f8f8f3 0px 0px 5px;
+    padding: 16px;
+}
+.section-box {
+    width: 100%;
+    padding: 16px;
+    margin: 24px auto;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+    font-size: 16px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+    font-size: 18px; /* Estilo para pantallas medianas */
+    }
+}
+@media (min-width: 1025px) {
+    body {
+    font-size: 20px; /* Estilo para pantallas grandes */
+    }
+}

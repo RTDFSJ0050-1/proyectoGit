@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #292a29;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+
+header {
+    background: #117707;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    img {
+        width: 1800px;
+        height: 400px;
+    }
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+nav ul li a {
+    color: rgb(161, 174, 160);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #33ab4d;
+    border-radius: 5px;
+}
+
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgb(190, 190, 190);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 30px;
+    color: #fff;
+    -webkit-text-stroke: 1px #000000;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #076a02;
+}
+
+
+ul li {
+    margin-bottom: 6px;
+}
+
+
+.imagenes img:hover{
+    transform: scale(1.50);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+section a {
+    color: #4a6cf7;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    background: #017d0c;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.age-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.age-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.age-box h2 {
+    margin-bottom: 10px;
+}
+
+.btn-yes, .btn-no {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-yes {
+    background: #28a745;
+    color: white;
+}
+
+.btn-no {
+    background: #dc3545;
+    color: white;
+}
+.image-container {
+    position: relative;   /* Necesario para ubicar el texto dentro */
+    display: inline-block;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 50%;             /* Centro vertical */
+    left: 50%;            /* Centro horizontal */
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black; /* Para que se lea mejor */
+    width: 80%;
+}
