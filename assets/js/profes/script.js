@@ -23,7 +23,7 @@ function mostrar(){
 	//Obtener el valor del nombre ingresado
 	const nombre = nombreInput.value;
 	// Validar si el nombre no está vacío
-	if(nombre.trim() === ''){
+	if (nombre.trim() === '') {
 		//si esta vacío se imprime un mensaje de error
 		salida.innerText = 'Por favor, ingresa un nombre.';
 		return;
