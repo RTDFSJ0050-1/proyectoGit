@@ -124,4 +124,4 @@ switch (esEstudiante){
 		descuento="No tiene derecho a un descuento";
 		break;
 }
-console.log(descuento);
+console.log(descuento); 

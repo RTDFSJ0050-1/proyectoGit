@@ -1,74 +1,82 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan page Cocteau Twins </title>
-        <style>
-        /* Estilos base responsivo */
-        body { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-        .container { width: 90%; max-width: 1200px; margin: auto; }
-        img { max-width: 100%; height: auto; display: block;border-radius: 15px; }
-        /* Media Query para pantallas pequeñas (móviles)  mobile first*/
-        @media (max-width: 768px) {
-            .container { width: 95%; }
-            h1 { font-size: 1.5em; }
-        }
-        </style> <!--si fijo el estilo embebido no se cambia al poner el cdn de bootstrap--> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/grupo2/ara-style.css"> <!--hoja estilo css y link cdn de bootstrap-->
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--se usa navbar dark de bootstrap con dropdown-->
+    <title>Fan page Cocteau Twins</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="../../css/grupo2/ara-style.css">
+</head>
+<body>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-    <a class="navbar-brand" href="../../html/grupo2/arantxagonzalez.html">Página fan club Cocteau Twins</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span><!-- span etiqueta para dar estilo a eun pequeño elemento -->
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="../html/arantxagonzalez.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Grupo 2
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="../../html/grupo2/amontealegre.html">Alberto Montealegre</a></li>
-            <li><a class="dropdown-item" href="../../html/profes/kenpo.html">Pagina profe kempo</a></li>
+        <a class="navbar-brand" href="../../html/grupo2/arantxagonzalez.html">
+            Página fan club Cocteau Twins
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Grupo 2
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="../../html/grupo2/amontealegre.html">Alberto Montealegre</a></li>
+                        <li><a class="dropdown-item" href="../../html/profes/kenpo.html">Página profe Kempo</a></li>
+                        <li><a class="dropdown-item" href="../../html/grupo2/francocancino.html">Franco Cancino</a></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-        </ul>
+        </div>
     </div>
+</nav>
+<!-- ===== HEADER ===== -->
+<header class="container my-4">
+    <img src="../../img/grupo2/arantxa/header cocteau.png"
+        alt="Cocteau Twins Logo" class="img-fluid mx-auto d-block">
+</header>
+<h1>☁️ Cocteau Twins Fan Page Chile ☁️</h1>
+<!-- ===== BIOGRAFÍA ===== -->
+<h3>Biografía</h3>
+<section class="section-box container">
+    <p>
+        Cocteau Twins fue una banda de dream pop formada en Grangemouth, Escocia,
+        activa entre 1979 y 1997. Sus miembros fueron Elizabeth Fraser,
+        Robin Guthrie y Simon Raymonde.
+    </p>
+    <p>
+        Son una de las bandas más influyentes del dream pop y el shoegaze,
+        caracterizados por atmósferas etéreas, guitarras con reverb
+        y voces evocadoras 🦇.
+    </p>
+</section>
+<!-- ===== IMAGEN ===== -->
+<div class="container my-4">
+    <img src="../../img/grupo2/arantxa/cocteau twins.jpg" alt="Cocteau Twins Band" class="img-thumbnail mx-auto d-block">
+</div>
+<!-- ===== AUDIO ===== -->
+<section class="section-box container">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-4">
+            <audio controls class="w-100">
+                <source src="../../Cocteau Twins - Heaven Or Las Vegas.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="col-md-4">
+            Ponle play 🎵
+        </div>
     </div>
-</nav>       
-        <header>
-    <img src="../../img/grupo2/arantxa/header cocteau.png" alt="Cocteau Twins Logo" class="rounded mx-auto d-block"><!--banner imagen en el encabezado-->
-    </header>
-    </header>
-    <h1><strong> ☁️ Cocteau Twins Fan Page Chile ☁️</strong></h1> <!--etiqueta strong etiqueta semantica, contenido importante o urgente y se pone en negrita-->
-    <br>
-    <h3>Biografía</h3>
-    <section class="container-sm"> <!--se usa container fluid de bootstrap para que ocupe todo el ancho-->
-    <p>Cocteau Twins fue una banda de dream pop formada en la localidad Grangemouth, Escocia, Reino Unido, estuvo activa desde 1979 hasta 1997.
-    Los miembros originales fueron la cantante Elizabeth Fraser, el guitarrista y programador Robin Guthrie y el bajista Will Heggie, quien más tarde sería reemplazado por el multinstrumentalista Simon Raymonde</p>
-    <br>
-    <p>Además de ser una de las más importantes bandas de dream pop y gothic rock🦇, 
-    Cocteau Twins han sido reconocidos como una de las principales influencias del posterior subgénero shoegaze, por la densidad sonora caracterizada por efectos como el chorus, el delay y la reverb de la guitarra de Guthrie y la atmósfera evocadora y melancólica de las líneas vocales de Fraser</p>
-    </div>
-    </section>
-    <br>
-    <br>
-    <div class="image-container">
-        <img src="../../img/grupo2/arantxa/cocteau twins.jpg" alt="Cocteau Twins Band" class="img-thumbnail"> <!--imagen con borde de bootstrap-->
-    </div>
-    <!-- Reproductor de audio básico -->
-    <audio controls>
-    <source src="../../Cocteau Twins - Heaven Or Las Vegas.mp3" type="audio/mpeg">
-    </audio>
-    <br>
-    <h3>Discografía Cocteau Twins</h3>
-        <ul>Albumes de estudio</ul>
-            <section class="container-sm"> <!--se usa container fluid de bootstrap para que ocupe todo el ancho-->
-                <br>
+</section>
+<!-- ===== DISCOGRAFÍA ===== -->
+<h3>Discografía Cocteau Twins</h3>
+<p>Álbumes de estudio</p>
+<section class="section-box container">
+    <ul>
         <li>Garlands (1982)</li>
         <li>Head over Heels (1983)</li>
         <li>Treasure (1984)</li>
@@ -76,31 +84,35 @@
         <li>Blue Bell Knoll (1988)</li>
         <li>Heaven or Las Vegas (1990)</li>
         <li>Four-Calendar Café (1993)</li>
-        <li>Milk & Kisses (1996)</li>  
-                <br>
-            </section>
-        <h3>Videos recomendados 🎬</h3  
-                <br>
-            <div class="container-sm"><!--se usa container fluid de bootstrap para que ocupe todo el ancho--> 
-            <iframe width="315" height="315" src="https://www.youtube.com/embed/sTQleXn0B1k?si=6qxVPn6JtEkmmVPC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
-        </div>
-        </div>
-        <p>Cocteau Twins - Bluebeard (Official Video)</p>
-        <br>
-        <section class="container-sm"><!--se usa container fluid de bootstrap para que ocupe todo el ancho--> 
-        <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Ingresa tu mail para recibir Novedades</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+        <li>Milk & Kisses (1996)</li>
+    </ul>
 </section>
-<br>
-            <footer>
-    <p>Fan page💛Creada por Arantxa González&copy;2025 Santiago Chile </p>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    </body>
-    </html>
+<!-- ===== VIDEO ===== -->
+<h3>Videos recomendados 🎬</h3>
+<div class="container my-4">
+    <iframe width="315" height="315"
+        src="https://www.youtube.com/embed/sTQleXn0B1k"
+        title="YouTube video"
+        allowfullscreen>
+    </iframe>
+    <p>Cocteau Twins-Bluebeard</p>
+</div>
+<!-- ===== FORMULARIO ===== -->
+<section class="section-box container">
+    <div class="mb-3">
+        <label class="form-label">Ingresa tu mail para recibir novedades</label>
+        <input type="email" class="form-control" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Comentarios</label>
+        <textarea class="form-control" rows="3"></textarea>
+    </div>
+</section>
+<!-- ===== FOOTER ===== -->
+<footer class="container my-4">
+    <p>Fan page 💛 Creada por Arantxa González © 2025 – Santiago, Chile</p>
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

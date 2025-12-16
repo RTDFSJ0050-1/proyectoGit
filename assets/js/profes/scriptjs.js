@@ -1,6 +1,6 @@
 const saludo = 'Hola, bienvenido al curso RTD FSJ 0050-1';
 let numero = 2;
-{
+{ 
 	let alternador = 5;
 	let resultado = alternador + 50; // 55
 	console.log(resultado);
