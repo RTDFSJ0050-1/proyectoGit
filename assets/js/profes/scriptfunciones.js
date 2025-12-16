@@ -11,7 +11,7 @@ saludarUsuario(nombreIngresado);
 function calcularAreaRectangulo(base, altura) {
 	let area = base * altura;
 	return area;
-}
+} 
 // Uso de función con valores directos
 let area1 = calcularAreaRectangulo(5, 10);
 console.log("El área del rectángulo es: " + area1);
