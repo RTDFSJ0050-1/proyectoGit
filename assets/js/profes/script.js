@@ -59,3 +59,19 @@ function finalizar(){
 	contador = 0; // Reiniciar el contador
 
 }
+
+/*Clase Número 13 Manipulación del DOM*/
+//1. Selección de elementos del DOM
+const mensajeElemento = document.getElementById('mensaje'); // Seleccionar el párrafo con id "mensaje"
+const cambiarMensajeBtn = document.getElementById('changeTextBtn'); // Seleccionar el botón con id "changeTextBtn"
+
+//2. Definición del Evento
+cambiarMensajeBtn.addEventListener('click', function() {
+	//3. Manipulación del contenido
+	mensajeElemento.textContent = 'El mensaje ha sido cambiado por JavaScript!'; // Cambiar el texto del párrafo
+	mensajeElemento.style.color = 'green'; // Cambiar el color del texto
+	mensajeElemento.style.fontSize = '20px'; // Cambiar el tamaño de la fuente
+
+	cambiarMensajeBtn.textContent = 'Mensaje Cambiado'; // Cambiar el texto del botón
+	cambiarMensajeBtn.disabled = true; // Deshabilitar el botón después de hacer clic
+});

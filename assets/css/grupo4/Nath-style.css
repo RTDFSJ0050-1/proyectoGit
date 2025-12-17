@@ -146,18 +146,26 @@ footer {
     color: white;
 }
 .image-container {
-    position: relative;   /* Necesario para ubicar el texto dentro */
+    position: relative;   
     display: inline-block;
 }
 
 .texto-encima {
     position: absolute;
-    top: 50%;             /* Centro vertical */
-    left: 50%;            /* Centro horizontal */
-    transform: translate(-50%, -50%); /* Centrado perfecto */
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
     color: white;
     font-size: 32px;
     font-weight: bold;
-    text-shadow: 3px 3px 8px black; /* Para que se lea mejor */
+    text-shadow: 3px 3px 8px black; 
     width: 80%;
+}
+.menu-texto {
+    display: flex;
+    gap: 25px;
+}
+
+.inicio {
+    order: 8;
 }
