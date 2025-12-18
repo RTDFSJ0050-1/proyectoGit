@@ -1,0 +1,41 @@
+body{
+	background-color: rgb(161, 19, 180);
+	color: rgb(5, 80, 80);
+	font-family: sans-serif;
+}
+h2,p,h1,h3,h4{
+	text-align: center;
+	color: rgb(9, 14, 92);
+}
+.container{
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+	border: 2px solid hsl(125, 68%, 37%);
+	border-radius: 15px;
+	background-color: hsl(140, 46%, 58%);
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.imagen-polla{
+    /* Estilo aplicado a foto de la polla */
+    width: 80%;
+    height: auto; /* Mantiene la proporción original */
+    border: 2px solid hsl(125, 68%, 37%);
+    padding: 10px; /* Espacio entre el borde y la imagen */
+    background-color: hsl(140, 46%, 58%);
+    display: flex; /* Para centrarla con margin: auto si es necesario */
+    border-radius: 15px;
+    margin: auto; /* Centra la imagen si es un elemento de bloque */
+}
+.contenedor-imagenes{
+	 display: flex; /* Activa Flexbox para alinear los elementos hijos en una línea */
+    justify-content: left; /* Opcional: Centra las imágenes dentro del contenedor */
+    gap: 10px; /* Opcional: Añade espacio entre las imágenes */
+	width: 200px; /* Establece un ancho fijo para todas las imágenes */
+    height: 150px; /* Establece un alto fijo para todas las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran el espacio sin distorsionarse, recortando si es necesario */
+}
+
