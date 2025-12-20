@@ -1,0 +1,30 @@
+body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+            margin: 20px;
+            background-color: rgb(221, 169, 150);
+        }
+
+        header, section {
+            background: rgb(169, 195, 243);
+            padding: 20px;
+            margin-bottom: 20px 15px;
+            border: 5px;
+            border-style: solid;
+            border-color: blueviolet;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 0, 128);
+        }
+        
+        h2 {
+            color: rgb(3, 61,168);
+            }
+        h1 {
+            text-align: center;
+            color: rgb(3, 61, 168);
+        }
+        p, ul, li, label, button{
+            color: rgb(27, 51, 4);
+        }
+        footer{
+            text-align: center;
+        }
