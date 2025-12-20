@@ -24,20 +24,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-function formatear() {
-    nombreInput.value = "";
-    salida.textContent = "";
-    agregarHistorial("Formulario formateado");
-}
-
-function finalizar() {
-    salida.textContent = "Gracias por visitar mi portafolio. ¡Hasta pronto!";
-    agregarHistorial("Finalizado");
-}
-
-function agregarHistorial(mensaje) {
-    const p = document.createElement("p");
-    p.textContent = mensaje;
-    historialDiv.appendChild(p);
-}
