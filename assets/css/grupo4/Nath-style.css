@@ -62,8 +62,9 @@ section {
 }
 
 h1 {
+    font-size: 30px;
     color: #fff;
-    -webkit-text-stroke: 3px #000000;
+    -webkit-text-stroke: 1px #000000;
     font-weight: bold;
 }
 
@@ -100,4 +101,71 @@ footer {
     color: white;
     padding: 15px;
     margin-top: 40px;
+}
+
+.age-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.age-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.age-box h2 {
+    margin-bottom: 10px;
+}
+
+.btn-yes, .btn-no {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-yes {
+    background: #28a745;
+    color: white;
+}
+
+.btn-no {
+    background: #dc3545;
+    color: white;
+}
+.image-container {
+    position: relative;   
+    display: inline-block;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 50%;            
+    left: 50%;           
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black; 
+    width: 80%;
+}
+.menu-texto {
+    display: flex;
+    gap: 25px;
+}
+
+.inicio {
+    order: 8;
 }

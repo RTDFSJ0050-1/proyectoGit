@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Digital</title>
-    <link rel="stylesheet" href="../css/karinastyles.css">
+    <link rel="stylesheet" href="../../css/grupo1/karinastyles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -12,7 +12,51 @@
     <h1>¡Hola! Mi nombre es Karina Riquelme</h1>
     <p>Soy Fullstack Java Developer</p>
     </header>
-
+<nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="karina.html">Karina Riquelme</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> Menú</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"> </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../../../index.html">Inicio</a>
+                </li>
+                <!-- Código dropdown grupo 1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Grupo 1
+                    </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="./carlosVenturelli.html">Carlos Venturelli</a></li>
+                    <li><a class="dropdown-item" href="./karina.html">Karina Riquelme</a></li>
+                    <li><a class="dropdown-item" href="./soledadf.html">Soledad Fernández</a></li>
+                    <li><a class="dropdown-item" href="./pamelaY.html">Pamela Yañez</a>
+                    <hr class="dropdown-divider">
+                    </li>   
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../profes/kenpo.html">Kenpo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    </nav>
 
 <nav class="navbar  text-white" >
     <p class="mx-auto">Ejemplo de acordeon con Bootstrap 5</p>
@@ -54,9 +98,9 @@
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-               <p> Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.
-                 This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling 
-                 up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</p>
+                <p> Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class.
+                    This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling 
+                    up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</p>
             </div>
         </div>
     </div>
@@ -101,66 +145,49 @@
         </h2>
         <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse 
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall 
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with 
+                custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go 
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-  <!----
-<section id="sobreMi" class="section">
-<h2>Sobre mí</h2>
-<p>Ingeniera con experiencia en desarrollo web, atención a clientes y soporte técnico. </p>
-<p>Me especializo en construir interfaces limpias y accesibles, optimizando rendimiento y mejorando la experiencia de usuario.</p>
-<p>Busco posiciones en desarrollo frontend o full-stack donde pueda aportar con diseño y código.</p>
-</section>
-
-
-<section id="proyectos" class="section">
-<h2>Proyectos destacados</h2>
-<p><strong>Proyecto 1:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-<p><strong>Proyecto 2:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-<p><strong>Proyecto 3:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</section>
-
-
-<section id="conocimientos" class="section">
-<h2>Competencias o conocimientos técnicos</h2>
-<ul class="lista">
-<li>Java</li>
-<li>HTML</li>
-<li>CSS</li>
-</ul>
-</section>
-
-
-<section id="experiencia" class="section">
-<h2>Experiencia laboral</h2>
-    <ul class="lista">
-        <li>Experiencia 1</li>
-        <li>Experiencia 2</li>
-        <li>Experiencia 3</li>
-    </ul>
-</section>
-
-
-<section id="formacion" class="section">
-    <h2>Formación académica</h2>
-        <ul class="lista">
-            <li>Formación 1</li>
-            <li>Formación 2</li>
-            <li>Formación 3</li>
-        </ul>
-</section>
-
-<section id="datosfreak" class="section">
-    <h2>Datos Freak</h2>
-    <ul class="lista">
-        <li>Tengo tres gatos: Ann, Harriet y Tuertin</li>
-        <li>Tengo un perrito, Toby que solo tiene un ojito</li>
-        <li>Soy Tarotista en mi tiempo libre y, segun mis amigas, soy bruja</li>
-
-</section>
--->
+ 
 <footer class="footer">
     <p>Derechos reservados karirik® 2025</p>
 </footer>

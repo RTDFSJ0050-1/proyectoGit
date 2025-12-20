@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0px;
   background-color: #036146;
   color: #ffffff;
 }
@@ -8,16 +8,79 @@ nav,
 header,
 section {
   background: #a5d6a7;
-  padding: 20px;
-  margin: 20px 15px;
+  padding: 10px;
+  margin: 10px 5px;
   border: 10px;
   border: 3px solid aquamarine;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffc107;
+}
+.navbar-nav  .nav-link.active {
+  color: #ffc107;
+  font-weight: 600;
+}
+.offcanvas {
+  backdrop-filter: blur(8px);
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dropdown-menu {
+  animation: fadeDown 0.3s ease;
+}
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: #ffc107 !important;
+  color: #212529 !important;
+}
+.dropdown-menu-dark .dropdown-item:active {
+  background-color: #ff9800 !important;
+  color: #212529 !important;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar.scrolled {
+  background-color: #212529 !important;
+  transition: background-color 0.3s ease;
+}
+.navbar a,
+.dropdown-menu a {
+  text-decoration: none;
+}
+.navbar a:hover,
+.dropdown-menu a:hover {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 32px;
-  color: #2e7d32 !important;
+  color: #ffffff !important;
   font-weight: bold;
 }
 
@@ -64,7 +127,7 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #ffffff;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 #myName {
   text-align: center;
@@ -76,4 +139,44 @@ footer {
 }
 #myName:hover {
   background-color: #4caf50;
+}
+header#myName h1 {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+header#myName h1:hover {
+  color: #ffc107 !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#skills li,
+#proyectos li,
+#education li {
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+#skills li:hover,
+#proyectos li:hover,
+#education li:hover {
+  background-color: #d1e7dd;
+  transform: scale(1.05);
+}
+#skills li,
+#proyectos li,
+#education li {
+  padding: 10px;
+  border-radius: 8px;
+  list-style: none;
+  padding-left: 0;
 }
