@@ -1,5 +1,5 @@
 // Mensaje de bienvenida en la consola
-console.log("Portafolio de Carlos Venturelli cargado correctamente 🚀");
+console.log("Portafolio de Carlos Venturelli cargado correctamente");
 
 // Ejemplo de interacción con el DOM
 document.addEventListener("DOMContentLoaded", () => {
