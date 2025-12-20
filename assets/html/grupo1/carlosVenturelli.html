@@ -1,103 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Venturelli</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-          crossorigin="anonymous">
-    
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="../../css/grupo1/carlos-style.css">
+  <meta charset="UTF-8">
+  <title>Portfolio Carlos Venturelli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      padding: 1rem;
+      text-align: center;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+    .dato-freak {
+      font-style: italic;
+      color: #ffd700;
+    }
+  </style>
 </head>
-<body class="bg-light">
+<body>
+  <!-- Navbar con enlaces -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Grupo 1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="kenpo.html">Kenpo</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="grupal.html">Página Grupal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Carlos Venturelli</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <header>
+    <h1>👨‍💻 Carlos Venturelli</h1>
+    <p>Ingeniero Industrial | Full Stack Java Developer</p>
+  </header>
 
-    <!-- Encabezado -->
-    <header class="bg-secondary text-white text-center py-4">
-        <h1>Portafolio de Carlos Venturelli</h1>
-        <p>Ingeniero Industrial | Full Stack Java Developer</p>
-    </header>
-
-    <!-- Sección de proyectos -->
-    <section id="proyectos" class="container my-5">
-        <h2 class="text-primary mb-4">Proyectos</h2>
-        <div class="row">
-            <div class="col border border-secondary rounded-3 p-3">
-                <h3>Simulación de portafolio</h3>
-                <p>Aplicación para análisis financiero y simulación de fondos.</p>
-            </div>
-            <div class="col border border-secondary rounded-3 p-3">
-                <h3>Aplicación web</h3>
-                <p>Proyecto full stack con Spring Boot y React.</p>
-            </div>
-            <div class="col border border-secondary rounded-3 p-3">
-                <h3>Portafolio digital</h3>
-                <p>Diseño en HTML/CSS con Bootstrap.</p>
-            </div>
-        </div>
+  <main class="container my-4">
+    <section>
+      <h2>Sobre mí</h2>
+      <p>Soy un apasionado del desarrollo web y la ciencia de datos. Me gusta integrar creatividad con rigor técnico.</p>
     </section>
 
-    <!-- Formulario interactivo -->
-    <section class="container my-5">
-        <h2>Formulario interactivo</h2>
-        <p>Ingresa tu nombre y prueba las acciones:</p>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" class="form-control w-50">
-        <div class="acciones mt-3">
-            <button id="mostrarBtn" class="btn btn-primary me-2" onclick="mostrar()">Mostrar</button>
-            <button id="formatearBtn" class="btn btn-warning me-2" onclick="formatear()">Formatear</button>
-            <button id="finalizarBtn" class="btn btn-danger" onclick="finalizar()">Fin</button>
+    <section>
+      <h2>Proyectos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-dark">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Web</h5>
+              <p class="card-text">Diseño modular con HTML, CSS y JS.</p>
+              <button class="btn btn-primary verMas">Ver más</button>
+            </div>
+          </div>
         </div>
-        <section class="salida border border-secondary rounded-3 mt-3 p-3">
-            <h3>Salida</h3>
-            <p id="salida"></p>
-        </section>
-        <section class="historial border border-secondary rounded-3 mt-3 p-3">
-            <h3>Historial</h3>
-            <div id="historial"></div>
-        </section>
+        <div class="col-md-4">
+          <div class="card text-dark">
+            <div class="card-body">
+              <h5 class="card-title">API REST</h5>
+              <p class="card-text">Spring Boot + Hibernate.</p>
+              <button class="btn btn-primary verMas">Ver más</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Carlos Venturelli — Proyecto personal con inspiración cósmica.</p>
-    </footer>
+    <section>
+      <h2>Dato Freak</h2>
+      <p class="dato-freak">Carlos colecciona libros de astronomía y le encanta diseñar fondos cósmicos 🌌.</p>
+    </section>
+  </main>
 
-    <!-- Scripts Bootstrap y JS propio -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" 
-            crossorigin="anonymous"></script>
-    
-    <!-- JS propio -->
-    <script src="../../js/grupo1/carlosJs.js"></script>
+  <footer>
+    <p>&copy; 2025 Grupo 1 - Carlos Venturelli</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Personalizado -->
+  <script>
+    document.querySelectorAll(".verMas").forEach(btn => {
+      btn.addEventListener("click", () => {
+        alert("Funcionalidad en construcción 🚀");
+      });
+    });
+  </script>
 </body>
 </html>
-
-
-
