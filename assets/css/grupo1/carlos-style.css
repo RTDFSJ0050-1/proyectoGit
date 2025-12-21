@@ -76,4 +76,6 @@ footer {
   color: #fff;
   font-size: 0.9rem;
 }
-
+.text-justify {
+  text-align: justify;
+}
