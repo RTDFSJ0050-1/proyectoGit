@@ -29,3 +29,19 @@ body {
         footer{
             text-align: center;
         }
+        .user-profile{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .user-info{
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        .user-name{
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(3, 61, 168);
+        }
+        
