@@ -1,13 +1,39 @@
 //Botón que cambia el texto del header
 const titulo = document.querySelector("#myName h1");
 
-const textoOriginal = "¡Hola soy Pamela!";
+const textoOriginal = "¡Hola, soy Pamela!";
 const textoAlternativo = "Desarrolladora en constante aprendizaje 🚀";
 
 titulo.addEventListener("click", () => {
   titulo.textContent =
     titulo.textContent === textoOriginal ? textoAlternativo : textoOriginal;
 });
+//Efecto máquina de escribir
+const text = "Desarrolladora Full Stack Java en Formación.";
+const typewriterEl = document.getElementById("typewriter");
+
+let index = 0;
+let isDeleting = false;
+const speed = 100;
+const pause = 1500;
+
+function typeLoop() {
+  if (!isDeleting && index < text.length) {
+    typewriterEl.textContent += text.charAt(index);
+    index++;
+    setTimeout(typeLoop, speed);
+  } else if (isDeleting && index > 0) {
+    typewriterEl.textContent = text.substring(0, index - 1);
+    index--;
+    setTimeout(typeLoop, speed / 2);
+  } else {
+    isDeleting = !isDeleting;
+    setTimeout(typeLoop, pause);
+  }
+}
+
+typeLoop();
+
 
 //Resaltar sección al pasar el mouse
 const cards = document.querySelectorAll(".card");
@@ -22,24 +48,19 @@ cards.forEach((card) => {
   });
 });
 
-//Alert de contacto
-const botonContacto = document.getElementById("btnContacto");
 
-botonContacto.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  const modal = new bootstrap.Modal(document.getElementById("modalContacto"));
-
-  modal.show();
-});
+// Abrir email al hacer clic en el botón de contacto
 document.getElementById("enviarCorreo").addEventListener("click", () => {
-  const modal = bootstrap.Modal.getInstance(
-    document.getElementById("modalContacto")
-  );
-  modal.hide();
-
   window.location.href = "mailto:pamela.kyp@gmail.com";
+
+  setTimeout(() => {
+    const modal = bootstrap.Modal.getInstance(
+      document.getElementById("modalContacto")
+    );
+    if (modal) modal.hide();
+  }, 500);
 });
+
 
 //Animación de aparición al hacer scroll
 const sections = document.querySelectorAll("section");
@@ -70,4 +91,27 @@ const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+// Mostrar/Ocultar el botón según el scroll
+window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    btnBackToTop.style.display = "block";
+  } else {
+    btnBackToTop.style.display = "none";
+  }
+};
+
+//Botón de volver arriba
+const btnBackToTop = document.getElementById("btnBackToTop");
+
+// Función para volver arriba suavemente
+btnBackToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // Esto hace el efecto de deslizamiento suave
+  });
 });
