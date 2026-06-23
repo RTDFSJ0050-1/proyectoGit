@@ -90,7 +90,8 @@ proyectoGit/
 ## 🚀 Cómo ejecutar localmente
 
 ```bash
-# 1. Clonar el repositorio clone https://github.com/RTDFSJ0050-1/proyectoGit.git
+# 1. Clonar el repositorio
+git clone https://github.com/RTDFSJ0050-1/proyectoGit.git
 cd proyectoGit
 
 # 2. Cambiar a la rama de trabajo
