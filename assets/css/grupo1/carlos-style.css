@@ -1,11 +1,11 @@
-/* ═══════════════════════════════════════════════════════════
-   PORTAFOLIO — CARLOS VENTURELLI
-   Paleta: navy profundo + ámbar dorado + azul eléctrico
-   Fuentes: Space Grotesk (títulos) · Inter (cuerpo)
-   Sin frameworks — CSS puro con Grid, Flexbox y variables
-═══════════════════════════════════════════════════════════ */
+/* 
+   PORTAFOLIO - CARLOS VENTURELLI
+   Paleta: navy profundo + ambar dorado + azul electrico
+   Fuentes: Space Grotesk (titulos) . Inter (cuerpo)
+   Sin frameworks - CSS puro con Grid, Flexbox y variables
+ */
 
-/* ── VARIABLES: MODO OSCURO (default) ─────────────────── */
+/*  VARIABLES: MODO OSCURO (default)  */
 :root,
 [data-theme="dark"] {
   --bg:          #060d1a;
@@ -31,7 +31,7 @@
   --badge-mid-text:  #fbbf24;
 }
 
-/* ── VARIABLES: MODO CLARO ─────────────────────────────── */
+/*  VARIABLES: MODO CLARO  */
 [data-theme="light"] {
   --bg:          #f4f7fc;
   --bg-alt:      #ffffff;
@@ -55,7 +55,7 @@
   --badge-mid-text:  #92600a;
 }
 
-/* ── RESET & BASE ──────────────────────────────────────── */
+/*  RESET & BASE  */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -96,23 +96,23 @@ img, svg {
   max-width: 100%;
 }
 
-/* ── TIPOGRAFÍA ────────────────────────────────────────── */
+/*  TIPOGRAFIA  */
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.2;
   color: var(--text-strong);
 }
 
-/* ── FOCO (accesibilidad teclado) ──────────────────────── */
+/*  FOCO (accesibilidad teclado)  */
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 4px;
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    HEADER / NAV
-══════════════════════════════════════════════════════════ */
+ */
 .cv-header {
   position: fixed;
   top: 0;
@@ -181,7 +181,7 @@ h1, h2, h3 {
   flex-shrink: 0;
 }
 
-/* Botón de tema */
+/* Boton de tema */
 .cv-theme-btn {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -233,9 +233,9 @@ h1, h2, h3 {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ══════════════════════════════════════════════════════════
-   MENÚ MÓVIL
-══════════════════════════════════════════════════════════ */
+/* 
+   MENU MOVIL
+ */
 .cv-mobile-menu {
   position: fixed;
   top: 60px;
@@ -269,9 +269,9 @@ h1, h2, h3 {
   color: var(--accent);
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    HERO
-══════════════════════════════════════════════════════════ */
+ */
 .cv-hero {
   min-height: calc(100vh - 60px);
   display: flex;
@@ -348,7 +348,7 @@ h1, h2, h3 {
   line-height: 1.8;
 }
 
-/* ── Botones ─────────────────────────────────────────── */
+/*  Botones  */
 .cv-hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -429,7 +429,7 @@ h1, h2, h3 {
   font-size: 0.95rem;
 }
 
-/* ── Visual decorativo: órbitas ───────────────────────── */
+/*  Visual decorativo: orbitas  */
 .cv-hero__visual {
   flex-shrink: 0;
   width: 280px;
@@ -489,7 +489,7 @@ h1, h2, h3 {
   z-index: 1;
 }
 
-/* ── Scroll cue ────────────────────────────────────────── */
+/*  Scroll cue  */
 .cv-scroll-cue {
   position: absolute;
   bottom: 2rem;
@@ -526,9 +526,9 @@ h1, h2, h3 {
   100% { opacity: 0; transform: translateY(10px); }
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    SECCIONES BASE
-══════════════════════════════════════════════════════════ */
+ */
 .cv-section {
   padding: 5.5rem clamp(1.5rem, 6vw, 6rem);
   background-color: var(--bg);
@@ -551,7 +551,7 @@ h1, h2, h3 {
   margin-bottom: 0.75rem;
 }
 
-/* Línea decorativa bajo el título */
+/* Linea decorativa bajo el titulo */
 .cv-section__title::after {
   content: '';
   display: block;
@@ -577,9 +577,9 @@ h1, h2, h3 {
 }
 .cv-link:hover { color: var(--accent); }
 
-/* ══════════════════════════════════════════════════════════
-   SOBRE MÍ
-══════════════════════════════════════════════════════════ */
+/* 
+   SOBRE MI
+ */
 .cv-about p {
   color: var(--muted);
   margin-bottom: 1.1rem;
@@ -605,9 +605,9 @@ h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
 }
 
-/* ══════════════════════════════════════════════════════════
-   TECNOLOGÍAS — Grid de tarjetas
-══════════════════════════════════════════════════════════ */
+/* 
+   TECNOLOGIAS - Grid de tarjetas
+ */
 .cv-skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -668,7 +668,7 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
-/* ── Caja "Actualmente aprendiendo" ───────────────────── */
+/*  Caja "Actualmente aprendiendo"  */
 .cv-learning {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -698,23 +698,23 @@ h1, h2, h3 {
 }
 
 .cv-learning__list li::before {
-  content: '→';
+  content: '\2192';
   position: absolute;
   left: 0;
   color: var(--accent2);
   font-size: 0.85rem;
 }
 
-/* ══════════════════════════════════════════════════════════
-   EXPERIENCIA — Timeline vertical
-   Elemento firma: línea continua con marcadores
-══════════════════════════════════════════════════════════ */
+/* 
+   EXPERIENCIA - Timeline vertical
+   Elemento firma: linea continua con marcadores
+ */
 .cv-timeline {
   position: relative;
   padding-left: 2rem;
 }
 
-/* Línea vertical */
+/* Linea vertical */
 .cv-timeline::before {
   content: '';
   position: absolute;
@@ -786,9 +786,9 @@ h1, h2, h3 {
   max-width: 620px;
 }
 
-/* ══════════════════════════════════════════════════════════
-   PROYECTOS — GitHub API
-══════════════════════════════════════════════════════════ */
+/* 
+   PROYECTOS - GitHub API
+ */
 
 /* Esqueletos de carga */
 .cv-projects-loader {
@@ -903,9 +903,9 @@ h1, h2, h3 {
   padding: 2rem;
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    CONTACTO
-══════════════════════════════════════════════════════════ */
+ */
 .cv-contact {
   text-align: center;
 }
@@ -932,9 +932,9 @@ h1, h2, h3 {
   font-size: 0.9rem;
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    FOOTER
-══════════════════════════════════════════════════════════ */
+ */
 .cv-footer {
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
@@ -963,9 +963,9 @@ h1, h2, h3 {
 }
 .cv-footer__link:hover { color: var(--accent); }
 
-/* ══════════════════════════════════════════════════════════
-   BOTÓN VOLVER ARRIBA
-══════════════════════════════════════════════════════════ */
+/* 
+   BOTON VOLVER ARRIBA
+ */
 .cv-back-top {
   position: fixed;
   bottom: 1.75rem;
@@ -997,9 +997,9 @@ h1, h2, h3 {
   box-shadow: 0 6px 24px rgba(232,160,32,0.5);
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    ANIMACIONES DE ENTRADA (IntersectionObserver)
-══════════════════════════════════════════════════════════ */
+ */
 .cv-reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -1011,9 +1011,9 @@ h1, h2, h3 {
   transform: translateY(0);
 }
 
-/* ══════════════════════════════════════════════════════════
+/* 
    RESPONSIVE
-══════════════════════════════════════════════════════════ */
+ */
 @media (max-width: 768px) {
   /* Nav: ocultar links, mostrar hamburguesa */
   .cv-nav__links { display: none; }
@@ -1069,7 +1069,7 @@ h1, h2, h3 {
   .cv-projects-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Movimiento reducido ─────────────────────────────── */
+/*  Movimiento reducido  */
 @media (prefers-reduced-motion: reduce) {
   .cv-orbit,
   .cv-hero__cursor,
