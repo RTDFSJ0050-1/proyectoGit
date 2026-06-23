@@ -20,7 +20,9 @@ Cuando no estoy programando, disfruto de los clásicos de la literatura universa
 
 ## 🌐 Portafolio en línea
 
-```
+```bash
+git clone ...
+
 https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.html
 ```
 
@@ -28,7 +30,9 @@ https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.h
 
 ## 🗂 Estructura del proyecto
 
-```
+```bash
+git clone ...
+
 proyectoGit/
 ├── index.html                        # Página de inicio del curso
 ├── README.md
@@ -109,13 +113,17 @@ git checkout avance9
 2. En *Branch*, seleccionar **`avance9`** y carpeta **`/ (root)`**
 3. Guardar — en 1–2 minutos el sitio estará disponible en:
 
-```
+```bash
+git clone ...
+
 https://rtdfsj0050-1.github.io/proyectoGit/
 ```
 
 El portafolio de Carlos estará en:
 
-```
+```bash
+git clone ...
+
 https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.html
 ```
 
@@ -132,4 +140,4 @@ https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.h
 
 ---
 
-*Talento Digital · RTD FSJ 0050-1 · 2025–2026*
+Talento Digital · RTD FSJ 0050-1 · 2025–2026
