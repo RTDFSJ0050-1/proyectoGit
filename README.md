@@ -22,7 +22,6 @@ Cuando no estoy programando, disfruto de los clásicos de la literatura universa
 
 ```bash
 git clone ...
-
 https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.html
 ```
 
@@ -115,7 +114,6 @@ git checkout avance9
 
 ```bash
 git clone ...
-
 https://rtdfsj0050-1.github.io/proyectoGit/
 ```
 
@@ -123,7 +121,6 @@ El portafolio de Carlos estará en:
 
 ```bash
 git clone ...
-
 https://rtdfsj0050-1.github.io/proyectoGit/assets/html/grupo1/carlosVenturelli.html
 ```
 

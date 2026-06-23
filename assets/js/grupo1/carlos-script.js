@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const roles = [
     'Ingeniero Industrial',
-    'Desarrollador Full Stack',
-    'Analista de Datos',
+    'Desarrollador Full Stack Junior',
+    'Analisís de Datos',
     'Técnico Químico'
   ];
 
